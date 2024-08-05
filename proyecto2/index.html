@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ventas de Cursos de Programación</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function navigateTo(pageId) {
+            document.querySelectorAll('.page').forEach(page => {
+                page.style.display = 'none';
+            });
+            document.getElementById(pageId).style.display = 'block';
+        }
+    </script>
+</head>
+
+
+<body>
+    
+    <!-- Página Principal -->
+    <div id="home" class="page">
+        <h1>Bienvenidos a los Cursos de Programación</h1>
+        <p>¡Bienvenido/a a nuestra plataforma educativa online!
+            Descubre un mundo de conocimiento con nuestros cursos diseñados para tu crecimiento personal y profesional.
+            Amplía tus habilidades desde cualquier lugar y a tu propio ritmo. ¡Empieza hoy mismo tu camino hacia el
+            éxito con nuestros cursos de alta calidad!
+        </p>
+        <h2>Tenemos cursos sobre:</h2>
+        <a href="javascript:void(0)" class="course-link" onclick="navigateTo('python')">Aprende Python desde cero</a>
+        <a href="javascript:void(0)" class="course-link" onclick="navigateTo('javascript')">Aprende JavaScript desde
+            cero</a>
+        <a href="javascript:void(0)" class="course-link" onclick="navigateTo('java')">Aprende Java desde cero</a>
+    </div>
+
+    <!-- Página de Python -->
+    <div id="python" class="page">
+        <h1>Curso de Python desde cero</h1>
+        <p>En este curso aprenderás Python desde lo más básico hasta conceptos avanzados.</p>
+        <p>Python es un lenguaje de programación poderoso y fácil de aprender, ampliamente utilizado en ciencia de
+            datos, desarrollo web, automatización y más.</p>
+        <a href="javascript:void(0)" class="back-link" onclick="navigateTo('home')">Volver</a>
+    </div>
+
+    <!-- Página de JavaScript -->
+    <div id="javascript" class="page">
+        <h1>Curso de JavaScript desde cero</h1>
+        <p>En este curso aprenderás JavaScript desde lo más básico hasta conceptos avanzados.</p>
+        <p>JavaScript es el lenguaje de programación del web, utilizado para crear sitios web interactivos y dinámicos.
+        </p>
+        <a href="javascript:void(0)" class="back-link" onclick="navigateTo('home')">Volver</a>
+    </div>
+
+    <!-- Página de Java -->
+    <div id="java" class="page">
+        <h1>Curso de Java desde cero</h1>
+        <p>En este curso aprenderás Java desde lo más básico hasta conceptos avanzados.</p>
+        <p>Java es un lenguaje de programación robusto y versátil, ampliamente utilizado en aplicaciones empresariales y
+            móviles.</p>
+        <a href="javascript:void(0)" class="back-link" onclick="navigateTo('home')">Volver</a>
+    </div>
+</body>
+
+</html>
